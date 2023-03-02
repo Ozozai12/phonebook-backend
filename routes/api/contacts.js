@@ -3,7 +3,7 @@ const {
   getAll,
   addContact,
   deleteContact,
-} = require("../controllers/contacts");
+} = require("../../controllers/contacts");
 
 router.get("/", getAll);
 router.post("/add", addContact);

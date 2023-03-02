@@ -13,7 +13,7 @@ const addContact = async (req, res) => {
 
 const deleteContact = async (req, res) => {
   const { id } = req.params;
-  const deletedContact = await Contact.findByIdAndDelete(id);
+  const deletedContact = await Contact.findByIdAndDelete({ _id: id });
   res.send(deletedContact);
 };
 
